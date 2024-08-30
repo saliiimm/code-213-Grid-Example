@@ -1,0 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
+}
+
+.grid-items {
+  border: 2px solid red;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.grid-items:last-child {
+  background-color: wheat;
+}
